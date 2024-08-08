@@ -23,7 +23,7 @@ int main() {
 
     while (true) {
         int valread = recv(sock, buffer, 1024, 0);
-        if (valread <= 0) break; // Перевірка на помилки при отриманні даних
+        if (valread <= 0) break; 
         buffer[valread] = '\0';
         std::cout << buffer;
 
